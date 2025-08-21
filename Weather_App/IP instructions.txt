@@ -1,0 +1,4 @@
+The Local IP (from ipconfig in CMD) goes in the router
+
+The Public IP (from websites like whatismyipaddress.com) goes in the Client app
+ 
