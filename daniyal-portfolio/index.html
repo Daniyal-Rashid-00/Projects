@@ -952,8 +952,8 @@
         /* Scroll Animation */
         .fade-in {
             opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: translateY(15px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
         }
 
         .fade-in.visible {
@@ -963,8 +963,8 @@
 
         .fade-in-left {
             opacity: 0;
-            transform: translateX(-30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: translateX(-15px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
         }
 
         .fade-in-left.visible {
@@ -974,8 +974,8 @@
 
         .fade-in-right {
             opacity: 0;
-            transform: translateX(30px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: translateX(15px);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
         }
 
         .fade-in-right.visible {
@@ -985,8 +985,8 @@
 
         .scale-in {
             opacity: 0;
-            transform: scale(0.9);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+            transform: scale(0.97);
+            transition: opacity 0.3s ease-out, transform 0.3s ease-out;
         }
 
         .scale-in.visible {
@@ -1168,8 +1168,20 @@
                 <h3>Email & DM Marketing</h3>
             </div>
             <div class="skill-item fade-in">
-                <div class="skill-icon">🤖</div>
-                <h3>n8n Automation</h3>
+                <div class="skill-icon">🔗</div>
+                <h3>N8N</h3>
+            </div>
+            <div class="skill-item fade-in">
+                <div class="skill-icon">🔧</div>
+                <h3>Git & GitHub</h3>
+            </div>
+            <div class="skill-item fade-in">
+                <div class="skill-icon">🎯</div>
+                <h3>Penetration Testing</h3>
+            </div>
+            <div class="skill-item fade-in">
+                <div class="skill-icon">🔨</div>
+                <h3>Burp Suite</h3>
             </div>
             <div class="skill-item fade-in">
                 <div class="skill-icon">📊</div>
@@ -1230,12 +1242,12 @@
                     <span class="project-tag">Cybersecurity</span>
                     <h3>Vulnerability Assessment Report - Banoqabil</h3>
                     <p>
-                        Comprehensive vulnerability assessment conducted for Banoqabil platform. Identified security weaknesses, assessed risk levels, and provided detailed remediation strategies to strengthen the platform's security posture.
+                        Conducted comprehensive vulnerability assessment using Nmap, OWASP ZAP, and Nessus, identifying 150+ security weaknesses. Analyzed and classified risk levels, enabling targeted mitigation strategies that reduced potential exploitation points by 40% and improved security posture by 30%.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Nmap</span>
-                        <span class="tech-tag">Burp Suite</span>
-                        <span class="tech-tag">OWASP</span>
+                        <span class="tech-tag">OWASP ZAP</span>
+                        <span class="tech-tag">Nessus</span>
                         <span class="tech-tag">Security Analysis</span>
                     </div>
                     <a href="https://github.com/Daniyal-Rashid-00/BanoQabil-Vulnerability-Assessment-Report" target="_blank" class="project-link">
@@ -1266,9 +1278,9 @@
             <div class="project-card fade-in-right">
                 <div class="project-content">
                     <span class="project-tag">Development</span>
-                    <h3>Dark Path</h3>
+                    <h3>Dark Path - Communication App</h3>
                     <p>
-                        Self-hosted open-source communication software built with security and privacy in mind. Features end-to-end encryption, secure messaging, and complete control over your communication infrastructure.
+                        Developed customizable, self-hosted communication platform using Python and open-source technologies. Implemented robust end-to-end encryption protocols, reducing potential data breach vulnerabilities by 70% and enabling 40% reduction in third-party provider reliance.
                     </p>
                     <div class="project-tech">
                         <span class="tech-tag">Python</span>
@@ -1343,7 +1355,7 @@
             <div class="education-card fade-in">
                 <h3>University of the Punjab</h3>
                 <div class="education-degree">BSIT (Bachelor of Science in Information Technology)</div>
-                <div class="education-meta">📍 Punjab, Pakistan | 🎓 2025 - Present</div>
+                <div class="education-meta">📍 Gujranwala, Punjab | 🎓 Expected: Oct 2029</div>
             </div>
             <div class="education-card fade-in">
                 <h3>Post Graduate Govt College Gujranwala</h3>
@@ -1421,8 +1433,8 @@
     <script>
         // Smooth scroll animation observer
         const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
+            threshold: 0.05,
+            rootMargin: '0px 0px -50px 0px'
         };
 
         const observer = new IntersectionObserver((entries) => {
@@ -1488,9 +1500,9 @@
             });
         });
 
-        // Add stagger effect to grid items
+        // Reduce stagger delay for faster animations
         document.querySelectorAll('.services-grid .service-card, .skills-grid .skill-item, .projects-grid .project-card').forEach((card, index) => {
-            card.style.transitionDelay = `${index * 0.1}s`;
+            card.style.transitionDelay = `${index * 0.05}s`;
         });
     </script>
 </body>
