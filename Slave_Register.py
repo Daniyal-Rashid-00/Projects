@@ -1,4 +1,4 @@
-# Slave Registor
+# Slave Registrator (By Daniyal)
 
 while True:
     print("***Slave Registration Office***")
@@ -36,8 +36,7 @@ while True:
         break
 print("\n--- Starting a new Registration ---")
 
-
-    #import time
+    #import time (You can ignore)
     #time.sleep(5)
 
 input("\nEnter to Close...")
