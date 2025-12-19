@@ -8,11 +8,17 @@ name = input("BTW what's your name?\n")
 if name == "Daniyal" or name == "daniyal":
     cringe_status = input("Are you cringe?\n")
 
-    if cringe_status == ("yes"):
+    aura_status = int(input("How much Aura do you have?\n"))
 
-        print("Your not welcome here!. SHO SHO!!")
+    if cringe_status == "yes" and aura_status < 1000:
+
+        print("Your not welcome here!. " + name + " SHO SHO!!")
 
         input()
+
+    else:
+
+        print("Hello " + name +", thank you for coming to Meow Crypto store!.\n\n")
 
 else:
 
@@ -47,7 +53,7 @@ else:
 
 print(price)
 
-quantity = input("How many " + coin_choice + " coins would you like to buy? \n")
+quantity = input("How many " + coin_choice + " would you like to buy? \n")
 
 total = price * int(quantity)
 
